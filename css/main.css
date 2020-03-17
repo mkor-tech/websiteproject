@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota|Oswald&display=swap');
+
+/* font-family: 'Bellota', cursive;
+font-family: 'Oswald', sans-serif; */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    /* margin: 0; */
+    padding: 0;
+}
+
+h1,h2, h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h3,h4 {
+    font-weight: 600; 
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+/* unvisited link */
+.navlinks a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+  
+/* visited link */
+.navlinks a:visited {
+    color: whitesmoke;
+}
+  
+/* mouse over link */
+.navlinks a:hover {
+    color: aqua;
+    cursor: pointer;
+}
+  
+/* selected link */
+.navlinks a.active {
+    color: aqua;
+}
+
+.navbar  {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #111;
+}
+
+.navlinks {
+    margin: auto;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navlinks li {
+    padding: 0 10px;
+    /* border-left:   2px solid white; */
+}
+
+.navlinks li:last-child {
+    /* border-right:  2px solid white; */
+}
+
+.navlinks a {
+    /* padding-right: 30px; */
+    font-size: 1.2rem;
+}    
+
+.content {
+   margin: 2rem 0;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+article {
+    font-size: 1.2rem;
+}
+
+article, .heading, .navlinks {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+
+.heading {
+/*     padding-top: 4rem; */
+}
+
+
+.outcome1 span {
+    /* display: block; */
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .accordion .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordion .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+@media (min-width: 480px) {
+
+    .navlinks {
+        flex-direction: row;
+    }
+
+    .navlinks li {
+        padding: 0 12px;
+        border-left:   2px solid white;
+    }
+    
+    .navlinks li:last-child {
+        border-right:  2px solid white;
+    }
+}
+
+@media (min-width: 768px) {
+    article, .heading, .navlinks {
+        padding: 0 4rem;
+    }
+
+    .navlinks li {
+        padding: 0 12px;
+        border-left:   2px solid white;
+    }
+    
+    .navlinks li:last-child {
+        border-right:  2px solid white;
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
